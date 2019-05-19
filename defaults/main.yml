@@ -10,7 +10,7 @@ sonarr_tv_directory: /tmp/tv
 sonarr_download_directory: /tmp/downloads
 sonarr_environment_variables:
   PUID: "1000"
-  PGUID: "1000"
+  PGID: "1000"
   TZ: Sydney/Australia
 
 sonarr_docker_additional_options:
