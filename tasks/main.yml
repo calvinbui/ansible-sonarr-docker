@@ -6,8 +6,6 @@
     state: directory
   loop:
     - "{{ sonarr_config_directory }}"
-    - "{{ sonarr_download_directory }}"
-    - "{{ sonarr_tv_directory }}"
 
 - name: Set Docker container parameters
   set_fact:
