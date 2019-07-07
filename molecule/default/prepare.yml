@@ -1,16 +1,19 @@
 ---
 - name: Prepare
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   hosts: all
   become: true
   pre_tasks:
     - name: Install dependencies
       apk:
-        name: g++,gcc,libxslt-dev,python2-dev
+        name: g++,gcc,libxslt-dev,python3-dev
         update_cache: true
   vars:
     pip_install_packages:
       - name: docker
+        executable: pip3
       - name: lxml
+        executable: pip3
   roles:
-    # - calvinbui.ansible_docker
     - calvinbui.ansible_pip

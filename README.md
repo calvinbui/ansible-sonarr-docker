@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.com/calvinbui/ansible-sonarr-docker.svg?branch=master)](https://travis-ci.com/calvinbui/ansible-sonarr-docker)
+![GitHub release](https://img.shields.io/github/release/calvinbui/ansible-sonarr-docker.svg)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/40535.svg)
+![Ansible Role](https://img.shields.io/ansible/role/d/40535.svg)
+
 # Ansible Sonarr
 
 Sonarr in Docker
