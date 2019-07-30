@@ -26,8 +26,7 @@
 
 - name: Wait for Sonarr start
   wait_for:
-    port: "{{ sonarr_ports[0].split(':')[0] }}"
-    host: "{{ sonarr_container.container.NetworkSettings.IPAddress }}"
+    path: "{{ sonarr_config_directory }}/config.xml"
 
 - name: Configure config.xml
   xml:
